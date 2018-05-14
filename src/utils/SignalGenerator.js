@@ -19,11 +19,11 @@ export default class SignalGenerator {
     }
     start() {
         console.log("Set Gain to 1.0");
-        this.gainNode.gain.linearRampToValueAtTime(1.0, this.context.currentTime +2);
+        this.gainNode.gain.linearRampToValueAtTime(1.0, this.context.currentTime +1);
     }
     stop() {
         console.log("Set Gain to 0.0");
-        this.gainNode.gain.linearRampToValueAtTime(0.0, this.context.currentTime +2);
+        this.gainNode.gain.linearRampToValueAtTime(0.0, this.context.currentTime +1);
     }
     setFreq(freq) {
         this.osc.frequency.value = freq;

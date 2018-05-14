@@ -16,9 +16,11 @@ export default class Sender extends Component{
         const audioManager = new AudioManager();
         this.signalGenerator = audioManager.createSignalGenerator();
         this.signalGenerator.setFreq(this.state.freq);
+        this.audioManager = audioManager;
     }
     componentWillUnmount() {
         this.signalGenerator.terminate();
+        this.audioManager.terminate();
     }
     render(){
         console.log('Sender Status', this.state);

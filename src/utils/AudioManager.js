@@ -30,4 +30,7 @@ export default class AudioManager {
                 });
         });
     }
+    terminate() {
+        this.context.close();
+    }
 }
