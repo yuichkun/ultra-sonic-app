@@ -1,3 +1,15 @@
 #menu{
-    background: pink;
+    display: flex;
+}
+#menu a{
+    width: 50%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
+    background: #d0151a;
+    color: white;
+}
+#menu a:first-child{
+    background: #155cd0;
 }
